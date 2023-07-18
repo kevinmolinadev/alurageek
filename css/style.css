@@ -1,0 +1,37 @@
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./gallery.css);
+@import url(./contact_us.css);
+@import url(./footer.css);
+html {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+body{
+    margin: 0;
+}
+h1,h2,h3{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: initial;
+}
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+}
