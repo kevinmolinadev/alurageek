@@ -49,8 +49,27 @@
 }
 .product__price{
     font-weight: 700;
+    font-size: 1rem;
 }
 .product__link{
     color: var(--text-color);
     font-weight: 600;
+    font-size: 0.875rem;
+}
+@media (min-width: 768px){
+    .gallery{
+        padding-inline: 2rem;
+    }
+    .section__products{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product__title{
+        font-size: 0.875rem;
+    }
+    .product__link{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1200px) {
+    
 }

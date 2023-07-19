@@ -42,4 +42,16 @@
     border: none;    
     font-weight: 500;
 }
-
+@media (min-width: 768px){
+    .contact_us{
+        padding: 2rem;
+        flex-wrap: wrap;
+        height: 364px;
+    }
+    .contact_us>*{
+        flex-grow: 1;
+    }
+}
+@media (min-width: 1200px) {
+    
+}
