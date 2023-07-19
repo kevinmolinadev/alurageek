@@ -16,6 +16,7 @@
 .form{
     text-align: left;
     gap: 1rem;
+    margin-top: 1rem;
 }
 .form__item {
     background-color: #ffffff;
