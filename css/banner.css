@@ -41,5 +41,15 @@
     }
 }
 @media (min-width: 1200px) {
-    
+    .banner{
+        padding-inline: 12%;
+    }
+    .item__title{font-size: 3.25rem;
+    }
+    .item__description{
+        font-size: 1.375rem;
+    }
+    .item__link{
+        font-size: 1rem;
+    }
 }

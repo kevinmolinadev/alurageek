@@ -4,6 +4,7 @@
     text-align: center;
     gap: 1rem;
 }
+
 .links__list{
     gap: 1rem;
     margin: 0;
@@ -13,7 +14,7 @@
 .list__item{
     font-weight: 500;
 }
-.form{
+.contact_us__form{
     text-align: left;
     gap: 1rem;
     margin-top: 1rem;
@@ -51,7 +52,20 @@
     .contact_us>*{
         flex-grow: 1;
     }
+    .contact_us__img{
+        flex-grow: 0;
+    }
+    .links__list{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .contact_us__form{
+        margin: 0;
+    }
 }
 @media (min-width: 1200px) {
-    
+    .contact_us{
+        padding:4rem 12%;
+        flex-direction: row !important;
+    }
 }

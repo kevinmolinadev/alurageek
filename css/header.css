@@ -62,7 +62,7 @@
     z-index: 2;
 }
 
-.search__input:focus~* .btn__img {
+.search__input:focus ~ * .btn__img {
     opacity: 0.6;
 }
 
@@ -83,8 +83,8 @@
     .header__register {
         order: 1;
         width: 25%;
+        font-size: 0.85rem;
         margin-left: auto;
-        font-size: .85rem;
     }
 
     .header__search {
@@ -104,4 +104,14 @@
 
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .header{
+        padding-inline: 12%;
+    }
+    .header__logo {
+        width: 12%;
+    }
+    .header__register {
+        width: 15%;
+    }
+}
