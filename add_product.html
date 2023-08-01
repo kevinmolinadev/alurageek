@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.svg">
+    <link rel="stylesheet" href="./css/index/style.css">
+    <link rel="stylesheet" href="./css/add-product/style.css">
+    <title>AluraGeek | Agregar producto</title>
+</head>
+<body>
+    <header class="header flex">
+        <div class="header__logo">
+            <a class="logo__img" href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
+        </div>
+        <div class="header__register flex">
+            <a class="register__item" href="./login.html">Iniciar Sesion</a>
+        </div>
+        <form class="header__search flex">
+            <input class="search__input" type="search" placeholder="¿Que quieres buscar?">
+            <div class="search__btn flex">
+                <input class="btn__input" type="submit" value="">
+                <img class="btn__img" src="./img/search.svg" alt="search">
+            </div>
+        </form>
+    </header>
+    <main>
+        <section class="product__form">
+            <h2>Agregar nuevo producto</h2>
+            <form data-form>
+                <div class="form__item">
+                    <input class="item__input" type="url" name="img" id="img" placeholder="URL de la imagen" required>
+                </div>
+                <div class="form__item">
+                    <input class="item__input" type="text" name="category" id="category" placeholder="Categoria" required>
+                
+                </div>
+                <div class="form__item">
+                    <input class="item__input" type="text" name="name" id="name" placeholder="Nombre del producto" required>
+                </div>
+                <div class="form__item">
+                    <input class="item__input" type="text" name="price" id="name" placeholder="Precio del producto" required>
+                </div>
+                <div class="form__item">
+                    <textarea class="item__input" name="message" id="message" placeholder="Descripcion" required></textarea>
+                </div>
+                <input class="form__btn" type="submit" value="Agregar producto">
+            </form>
+        </section>
+        <section class="contact_us flex-column">
+            <div class="contact_us__img">
+                <img src="./img/logo.svg" alt="logo">
+            </div>
+            <div class="contact_us__links">
+                <ul class="links__list flex-column">
+                    <li class="list__item"><a href="">Quienes somos</a></li>
+                    <li class="list__item"><a href="">Politica de privacidad</a></li>
+                    <li class="list__item"><a href="">Programa de fidelidad</a></li>
+                    <li class="list__item"><a href="">Nuestras tiendas</a></li>
+                    <li class="list__item"><a href="">Quiero ser franquiciado</a></li>
+                    <li class="list__item"><a href="">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <form action="" class="contact_us__form flex-column">
+                <h3 class="form__title">Hable con nosotros</h3>
+                <div class="form__item">
+                    <input class="item__input" type="text" name="name" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="form__item">
+                    <textarea class="item__input" name="message" id="message" placeholder="Mensaje" required></textarea>
+                </div>
+                <input class="form__btn" type="submit" value="Enviar mensaje">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2023 AluraGeek | Kevin Molina Lazarte</p>
+    </footer>
+</body>
+</html>

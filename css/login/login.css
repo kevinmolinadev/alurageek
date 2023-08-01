@@ -1,0 +1,28 @@
+.login{
+    align-items: center;
+    background-color:#F5F5F5;
+    flex-grow: 1;
+    justify-content: center;   
+    gap: 1rem; 
+    padding:6rem 1rem;
+}
+.login__form{
+    gap: 1rem;
+    width: 80%;
+}
+.login__form > .form__btn{
+    margin: 0;
+    padding-inline:2rem;
+    align-self: center;
+}
+@media (min-width: 768px){
+    .login{
+        padding: 0rem 2rem;
+        flex-shrink: 1;
+    }
+}
+@media (min-width: 1200px){
+    .login__form{
+        width: 30%;
+    }
+}

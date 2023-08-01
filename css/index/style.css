@@ -17,6 +17,17 @@ html {
 body{
     margin: 0;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    background-color:#F5F5F5;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
 h1,h2,h3{
     margin: 0;
 }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.svg">
+    <link rel="stylesheet" href="./css/index/style.css">
+    <link rel="stylesheet" href="./css/product/style.css">
+    <title>AluraGeek | Producto</title>
+</head>
+
+<body>
+    <header class="header flex">
+        <div class="header__logo">
+            <a href="./index.html"><img class="logo__img" src="./img/logo.svg" alt="logo"></a>
+        </div>
+        <form class="header__search flex">
+            <input class="search__input" type="search" placeholder="¿Que quieres buscar?">
+            <div class="search__btn flex">
+                <input class="btn__input" type="submit" value="">
+                <img class="btn__img" src="./img/search.svg" alt="search">
+            </div>
+        </form>
+    </header>
+    <main>
+        <section class="view_product flex-column">
+            <div class="product__item flex">
+                <div class="item__img">
+                    <img src="" alt="">
+                </div>
+                <div class="item__information">
+                    <p class="item__title"></p>
+                    <p class="item__price"></p>
+                    <p class="item__description"></p>
+                </div>
+            </div>
+            <div class="product__recomended">
+                <h2>Productos similares</h2>
+                <div class="section__products grid">
+                </div>
+            </div>
+        </section>
+        <section class="contact_us flex-column">
+            <div class="contact_us__img">
+                <img src="./img/logo.svg" alt="logo">
+            </div>
+            <div class="contact_us__links">
+                <ul class="links__list flex-column">
+                    <li class="list__item"><a href="">Quienes somos</a></li>
+                    <li class="list__item"><a href="">Politica de privacidad</a></li>
+                    <li class="list__item"><a href="">Programa de fidelidad</a></li>
+                    <li class="list__item"><a href="">Nuestras tiendas</a></li>
+                    <li class="list__item"><a href="">Quiero ser franquiciado</a></li>
+                    <li class="list__item"><a href="">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <form action="" class="contact_us__form flex-column">
+                <h3 class="form__title">Hable con nosotros</h3>
+                <div class="form__item">
+                    <input class="item__input" type="text" name="name" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="form__item">
+                    <textarea class="item__input" name="message" id="message" placeholder="Mensaje" required></textarea>
+                </div>
+                <input class="form__btn" type="submit" value="Enviar mensaje">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">© 2023 AluraGeek | Kevin Molina Lazarte</p>
+    </footer>
+    <script type="module" src="./js/product.js"></script>
+</body>
+
+</html>
