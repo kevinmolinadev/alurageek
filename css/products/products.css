@@ -21,6 +21,9 @@
 .product:nth-child(n) {
     display: flex;
 }
+.product__options>a{
+    cursor: pointer;
+}
 
 @media (min-width: 768px) {
     .section__products {

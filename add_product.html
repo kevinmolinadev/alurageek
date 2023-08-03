@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/add-product/style.css">
     <title>AluraGeek | Agregar producto</title>
 </head>
+
 <body>
     <header class="header flex">
         <div class="header__logo">
@@ -32,17 +34,23 @@
                     <input class="item__input" type="url" name="img" id="img" placeholder="URL de la imagen" required>
                 </div>
                 <div class="form__item">
-                    <input class="item__input" type="text" name="category" id="category" placeholder="Categoria" required>
-                
+                    <select name="category" id="options">
+                    </select>
+                    <p>o</p>
+                    <input class="item__input" type="text" name="category" id="category"
+                        placeholder="Agregar nueva categoria" required>
                 </div>
                 <div class="form__item">
-                    <input class="item__input" type="text" name="name" id="name" placeholder="Nombre del producto" required>
+                    <input class="item__input" type="text" name="name" id="name" placeholder="Nombre del producto"
+                        required>
                 </div>
                 <div class="form__item">
-                    <input class="item__input" type="text" name="price" id="name" placeholder="Precio del producto" required>
+                    <input class="item__input" type="text" name="price" id="price" placeholder="Precio del producto"
+                        required>
                 </div>
                 <div class="form__item">
-                    <textarea class="item__input" name="message" id="message" placeholder="Descripcion" required></textarea>
+                    <textarea class="item__input" name="description" id="description" placeholder="Descripcion"
+                        required></textarea>
                 </div>
                 <input class="form__btn" type="submit" value="Agregar producto">
             </form>
@@ -76,5 +84,7 @@
     <footer class="footer">
         <p class="footer__text">© 2023 AluraGeek | Kevin Molina Lazarte</p>
     </footer>
+    <script type="module" src="./js/add_product.js"></script>
 </body>
+
 </html>
