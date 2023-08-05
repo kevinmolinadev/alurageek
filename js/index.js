@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         const products = await dbProducts();
         sections.forEach((section) => {
             let productsCategory = products.filter(product => product.idcategory === section.id)
-            if (productsCategory.length > 0) {
+            if (productsCategory.length>0) {  
                 let newSection = sectiond(section.name);
                 const grid = newSection.querySelector('.section__products');
                 productsCategory.forEach(({ id, name, img, description, price, idcategory }) => {

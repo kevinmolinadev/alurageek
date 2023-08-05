@@ -11,14 +11,18 @@
     {
       "id": 3,
       "name": "Diversos"
+    },
+    {
+      "name": "Steam",
+      "id": 4
     }
   ],
   "products": [
     {
-      "name": "Personaje ",
+      "name": "Taza Stormtrooper",
       "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/taza.png",
       "description": "Esta hermosa taza presenta un diseño detallado del casco de los Stormtroopers, soldados imperiales de la saga Star Wars. Fabricada en cerámica de alta calidad, es perfecta para disfrutar de tus bebidas favoritas mientras revives las emocionantes batallas de la galaxia lejana.",
-      "price": "99",
+      "price": "56",
       "idcategory": 1,
       "id": 1
     },
@@ -151,12 +155,36 @@
       "idcategory": 3
     },
     {
-      "id": 18,
       "name": "Pikachu",
       "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/pikachu.png",
       "description": "Este adorable peluche de Pikachu, el famoso Pokémon eléctrico, es un compañero ideal para los amantes de Pokémon. Con sus mejillas sonrojadas y su carácter encantador, este peluche captura la esencia del querido personaje. Lleva contigo la magia del mundo Pokémon y deja que Pikachu ilumine tu día con su energía y encanto.",
       "price": "24",
-      "idcategory": 3
+      "idcategory": 3,
+      "id": 18
+    },
+    {
+      "name": "Sekirito Goty de toda la vida",
+      "img": "https://cdn.akamai.steamstatic.com/steam/apps/814380/capsule_616x353.jpg?t=1678991267",
+      "description": "Este juegot es goty",
+      "price": "100",
+      "idcategory": 4,
+      "id": 19
+    },
+    {
+      "name": "hollow knight",
+      "img": "https://images.squarespace-cdn.com/content/v1/606d159a953867291018f801/1619987722169-VV6ZASHHZNRBJW9X0PLK/Key_Art_02_layeredjpg.jpg?format=1500w",
+      "description": "Tremendo juego el del cascaron vacio, una obra maestra 20/10 y goty",
+      "price": "24",
+      "idcategory": 4,
+      "id": 20
+    },
+    {
+      "name": "Dark Shouls",
+      "img": "https://image.api.playstation.com/cdn/EP0700/CUSA08495_00/COYF3JBI46ftkG7tIdTjQg0v9aZ2378N.png",
+      "description": "Este jeugo de Dark Shouls Remastered es una carta de amor a los videojuegos, Tremendo juego 🗿🗿",
+      "price": "59",
+      "idcategory": 4,
+      "id": 21
     }
   ]
 }

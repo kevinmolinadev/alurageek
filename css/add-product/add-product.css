@@ -22,6 +22,11 @@
     display: flex;
     gap: 1rem;
 }
+.form__item:nth-child(2)>select{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
 .form__item:nth-child(2)>p{
     margin: 0;
     width: auto;

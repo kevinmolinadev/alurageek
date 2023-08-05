@@ -1,8 +1,5 @@
-import { dbCategory, dbCategorys, dbProduct, updateProduct } from "./db/client-service.js";
-const url = window.location;
-const searchParams = new URLSearchParams(url.search);
+import { dbCategorys, newProduct, newCategory} from "./db/client-service.js";
 const form = document.querySelector('[data-form]');
-const idValue = searchParams.get('id');
 const name = document.getElementById('name');
 const img = document.getElementById('img');
 const newcategory = document.getElementById('category');
@@ -15,32 +12,49 @@ const addcategory = (idCategory, nameCategory) => {
     newCategory.value = idCategory;
     return newCategory;
 }
-const Product = async (id) => {
+window.addEventListener('DOMContentLoaded', async () => {
+
     try {
-        const product = await dbProduct(id);
-        const categorys = await dbCategorys();
-        const category = await dbCategory(product.idcategory)
-        name.value = product.name;
-        img.value = product.img;
-        console.log(category.name);
+        const categorys= await dbCategorys();
         categorys.forEach(({ id, name }) => {
             let newC = addcategory(id, name);
-            if (newC.value == category.id) {
-                newC.selected = true;
-            }
             categoryOptions.appendChild(newC);
         });
-        price.value = product.price;
-        description.value = product.description;
     } catch (error) {
         console.error(error);
     }
-}
-Product(idValue);
+});
+categoryOptions.addEventListener('change',()=>{
+    let opacity=1;
+    if(categoryOptions.selectedIndex!=0){
+        newcategory.disabled=true;
+        newcategory.required=!newcategory.required;
+        opacity=0.5;
+    }else{
+        console.log(opacity);
+        newcategory.disabled=false;
+    }
+    newcategory.style.opacity=opacity;
+})
+newcategory.addEventListener('input',()=>{
+    if(newcategory.value!=''){
+        categoryOptions.selectedIndex=0;
+        categoryOptions.disabled=true;
+    }else{
+        categoryOptions.disabled=false;
+    }
+})
 form.addEventListener('submit', async (event) => {
+    let idCategoryProduct='';
     try {
         event.preventDefault();
-        await updateProduct(idValue, name.value, img.value, description.value, price.value, 1);
+        if(newcategory.value!=''){
+            const category=await newCategory(newcategory.value);
+            idCategoryProduct=category.id;
+        }else{
+            idCategoryProduct=categoryOptions.value;
+        }
+        await newProduct(name.value, img.value, description.value, price.value, Number(idCategoryProduct));
         window.location.href = '../products.html';
     } catch (error) {
         console.error(error);

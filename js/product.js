@@ -23,23 +23,28 @@ const productInformation = async (id) => {
 const recomendedProducts = async (id) => {
     try {
         const Products = await dbProducts();
-        let count = 0;
-        for (const element of Products) {
+        const Product = await dbProduct(id);
+        const listProducts = Products.filter(product => product.id != id);
+        const productsCategory = listProducts.filter(product => product.idcategory == Product.idcategory)
+        productsCategory.forEach(({ id, name, img, description, price, idcategory }) => {
+            addProduct(id, name, img, description, price, idcategory);
+        });
+        let count = productsCategory.length;
+        listProducts.forEach(({ id, name, img, description, price, idcategory }) => {
             if (count > 5) {
                 return;
             } else {
-                if (element.id == id) {
-                    console.log(element.name);
-                } else {
-                    count++
-                    let newRecomended = product(element.id, element.name, element.img, element.description, element.price, element.idcategory);
-                    recomended.appendChild(newRecomended)
-                }
+                addProduct(id, name, img, description, price, idcategory);
+                count++;
             }
-        }
+        })
     } catch (error) {
         console.error(error);
     }
+}
+const addProduct = (id, name, img, description, price, idcategory) => {
+    let newRecomended = product(id, name, img, description, price, idcategory);
+    recomended.appendChild(newRecomended);
 }
 productInformation(idValue);
 recomendedProducts(idValue);

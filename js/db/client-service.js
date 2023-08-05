@@ -27,3 +27,25 @@ export const updateProduct = (id, name, img, description, price, idcategory) => 
         body: JSON.stringify({ name, img, description, price, idcategory })
     });
 }
+
+export const newProduct=(name, img, description, price, idcategory)=>{
+    return fetch(products, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, img, description, price, idcategory })
+    });
+}
+
+export const newCategory= async(name)=>{
+    const responsive = await fetch(categorys, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({name})
+    });
+    const data=await responsive.json();
+    return data;
+}

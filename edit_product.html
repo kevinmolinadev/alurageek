@@ -28,18 +28,14 @@
     </header>
     <main>
         <section class="product__form">
-            <h2>Agregar nuevo producto</h2>
+            <h2>Actualizar producto</h2>
             <form data-form>
                 <div class="form__item">
                     <input class="item__input" type="url" name="img" id="img" placeholder="URL de la imagen" required>
                 </div>
                 <div class="form__item">
                     <select name="category" id="options">
-                        <option value="0">Seleccione una opcion</option>
                     </select>
-                    <p>o</p>
-                    <input class="item__input" type="text" name="category" id="category"
-                        placeholder="Agregar nueva categoria" required>
                 </div>
                 <div class="form__item">
                     <input class="item__input" type="text" name="name" id="name" placeholder="Nombre del producto"
@@ -53,7 +49,7 @@
                     <textarea class="item__input" name="description" id="description" placeholder="Descripcion"
                         required></textarea>
                 </div>
-                <input class="form__btn" type="submit" value="Agregar producto">
+                <input class="form__btn" type="submit" value="Actualizar producto">
             </form>
         </section>
         <section class="contact_us flex-column">
@@ -85,7 +81,7 @@
     <footer class="footer">
         <p class="footer__text">© 2023 AluraGeek | Kevin Molina Lazarte</p>
     </footer>
-    <script type="module" src="./js/add_product.js"></script>
+    <script type="module" src="./js/edit_product.js"></script>
 </body>
 
 </html>

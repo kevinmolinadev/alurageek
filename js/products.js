@@ -6,7 +6,7 @@ const product = (id, name, img, price) => {
         <img src="${img}" alt="${name}">
         <div class="product__options">
             <a data-delete id="${id}"><img src="./img/products/delete.svg" alt="delete"></a>
-            <a href="../add_product.html?id=${id}"><img src="./img/products/edit.svg" alt="edit"></a>
+            <a href="../edit_product.html?id=${id}"><img src="./img/products/edit.svg" alt="edit"></a>
         </div>
     </div>
     <p class="product__title">${name}</p>
