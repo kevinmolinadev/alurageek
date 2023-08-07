@@ -88,6 +88,10 @@
     font-weight: 600;
     font-size: 0.875rem;
 }
+.product--not-found{
+    text-align: center;
+    padding-block: 2rem;
+}
 
 @media (min-width: 768px) {
     .gallery {
