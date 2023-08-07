@@ -1,4 +1,4 @@
-import { dbProducts, dbProduct } from './db/client-service.js';
+import { dbProducts, dbProduct } from '../db/client-service.js';
 import { product } from './index.js';
 const url = window.location;
 const searchParams = new URLSearchParams(url.search);
@@ -10,6 +10,7 @@ const title = document.querySelector('.item__title');
 const price = document.querySelector('.item__price');
 const description = document.querySelector('.item__description');
 const recomended = document.querySelector('.section__products');
+
 const productInformation = async (id) => {
     try {
         const product = await dbProduct(id);
@@ -22,6 +23,8 @@ const productInformation = async (id) => {
         console.log(error);
     }
 }
+productInformation(idValue);
+
 const recomendedProducts = async (id) => {
     try {
         const Products = await dbProducts();
@@ -44,12 +47,13 @@ const recomendedProducts = async (id) => {
         console.error(error);
     }
 }
+recomendedProducts(idValue);
+
 const addProduct = (id, name, img, description, price, idcategory) => {
     let newRecomended = product(id, name, img, description, price, idcategory);
     recomended.appendChild(newRecomended);
 }
-productInformation(idValue);
-recomendedProducts(idValue);
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     localStorage.setItem('search',textSearch.value);

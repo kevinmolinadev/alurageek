@@ -1,4 +1,4 @@
-import { dbCategorys, newProduct, newCategory} from "./db/client-service.js";
+import { dbCategorys, newProduct, newCategory} from "../db/client-service.js";
 const formSearch = document.querySelector('.header__search');
 const textSearch = document.querySelector('.header__search input');
 const form = document.querySelector('[data-form]');
@@ -8,14 +8,15 @@ const newcategory = document.getElementById('category');
 const categoryOptions = document.getElementById('options');
 const price = document.getElementById('price');
 const description = document.getElementById('description');
+
 const addcategory = (idCategory, nameCategory) => {
     let newCategory = document.createElement('option');
     newCategory.text = nameCategory;
     newCategory.value = idCategory;
     return newCategory;
 }
-window.addEventListener('DOMContentLoaded', async () => {
 
+window.addEventListener('DOMContentLoaded', async () => {
     try {
         const categorys= await dbCategorys();
         categorys.forEach(({ id, name }) => {
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         console.error(error);
     }
 });
+
 categoryOptions.addEventListener('change',()=>{
     let opacity=1;
     if(categoryOptions.selectedIndex!=0){
@@ -38,6 +40,7 @@ categoryOptions.addEventListener('change',()=>{
     }
     newcategory.style.opacity=opacity;
 })
+
 newcategory.addEventListener('input',()=>{
     if(newcategory.value!=''){
         categoryOptions.selectedIndex=0;
@@ -46,6 +49,7 @@ newcategory.addEventListener('input',()=>{
         categoryOptions.disabled=false;
     }
 })
+
 form.addEventListener('submit', async (event) => {
     let idCategoryProduct='';
     try {
@@ -62,6 +66,7 @@ form.addEventListener('submit', async (event) => {
         console.error(error);
     }
 })
+
 formSearch.addEventListener('submit', (e) => {
     e.preventDefault();
     localStorage.setItem('search',textSearch.value);

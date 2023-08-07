@@ -1,4 +1,4 @@
-import { dbProducts } from './db/client-service.js';
+import { dbProducts } from '../db/client-service.js';
 import { product, Load } from './index.js';
 const logo = document.querySelector('.header__logo')
 const form = document.querySelector('.header__search');
@@ -6,6 +6,7 @@ const textSearch = document.querySelector('.header__search input');
 const btnSearch = document.querySelector('.search__btn input');
 const gallery = document.getElementById('gallery');
 let click = 0;
+
 btnSearch.addEventListener('click', () => {
     click++;
     if (click <= 1 && window.innerWidth <= 768) {
@@ -15,6 +16,7 @@ btnSearch.addEventListener('click', () => {
         logo.classList.add('header__logo--click', 'transition-effect');
     }
 });
+
 document.addEventListener('click', (e) => {
     if (!form.contains(e.target)) {
         btnSearch.classList.remove('btn__input--click');
@@ -24,12 +26,14 @@ document.addEventListener('click', (e) => {
         click = 0;
     }
 });
+
 textSearch.addEventListener('input', () => {
     if (textSearch.value == '') {
         gallery.innerHTML = '';
         Load();
     }
 });
+
 const search = async () => {
     const nameProduct = textSearch.value;
     try {
@@ -55,10 +59,12 @@ const search = async () => {
         console.error(error);
     }
 }
+
 const searchSubmit = (e) => {
     e.preventDefault();
     search();
 };
+
 form.addEventListener('submit', searchSubmit);
 setTimeout(() => {
     textSearch.value = localStorage.getItem('search');

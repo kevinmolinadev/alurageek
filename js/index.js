@@ -1,4 +1,5 @@
-import { dbProducts, dbCategorys } from './db/client-service.js';
+import { dbProducts, dbCategorys } from '../db/client-service.js';
+
 const sectiond = (name) => {
     let section = document.createElement('section');
     let data = `
@@ -13,6 +14,7 @@ const sectiond = (name) => {
     section.classList.add('gallery__section')
     return section;
 }
+
 export const product = (id, name, img, description, price, idcategory) => {
     let product = document.createElement('article');
     let data = `
@@ -54,26 +56,3 @@ export const Load = async () => {
     }
 };
 Load();
-/*   window.addEventListener('DOMContentLoaded', async () => {
-    const sections = document.getElementById('gallery');
-
-    try {
-        const categories = await dbCategory();
-
-        for (const element of categories) {
-            const products = await dbProducts();
-            const filteredProducts = products.filter(product => product.idcategory === element.id);
-            console.log(filteredProducts);
-            
-            let newSection = section(element.name);
-            filteredProducts.forEach(({ id, name, img, description, price, idcategory }) => {
-                let newProduct = product(id, name, img, description, price, idcategory);
-                newSection.appendChild(newProduct);
-            });
-
-            sections.appendChild(newSection);
-        }
-    } catch (e) {
-        console.log(e);
-    }
-}); */

@@ -1,6 +1,7 @@
-import { deleteProduct, dbProducts } from "./db/client-service.js";
+import { deleteProduct, dbProducts } from "../db/client-service.js";
 const form = document.querySelector('.header__search');
 const textSearch = document.querySelector('.header__search input');
+
 const product = (id, name, img, price) => {
     let product = document.createElement('article');
     let data = `
@@ -28,6 +29,7 @@ const product = (id, name, img, price) => {
     product.classList.add('product');
     return product;
 }
+
 window.addEventListener('DOMContentLoaded', async () => {
     const contenedor = document.querySelector('.section__products');
     try {
@@ -40,6 +42,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         console.error('Error fetching products:', error);
     }
 });
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     localStorage.setItem('search',textSearch.value);
