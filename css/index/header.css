@@ -88,7 +88,7 @@
 }
 .search__input--click{
     padding-inline: 1rem;
-    width: 90%;
+    width: 85%;
     display: flex;
 }
 .btn__input--click{
@@ -132,6 +132,13 @@
 
     .btn__img {
         opacity: 0.5;
+    }
+    .search__input--click{
+        padding-inline: 0;
+        width: 90%;
+    }
+    .btn__input--click{
+        padding-block: 0;
     }
 
 }
