@@ -1,5 +1,4 @@
 import { dbProducts, dbCategorys } from './db/client-service.js';
-
 const sectiond = (name) => {
     let section = document.createElement('section');
     let data = `
@@ -28,29 +27,33 @@ export const product = (id, name, img, description, price, idcategory) => {
     return product;
 }
 
-window.addEventListener('DOMContentLoaded', async () => {
+export const Load = async () => {
+    const textSearch = document.querySelector('.header__search input');
     const gallery = document.getElementById('gallery');
     try {
         const sections = await dbCategorys();
         const products = await dbProducts();
-        sections.forEach((section) => {
-            let productsCategory = products.filter(product => product.idcategory === section.id)
-            if (productsCategory.length>0) {  
-                let newSection = sectiond(section.name);
-                const grid = newSection.querySelector('.section__products');
-                productsCategory.forEach(({ id, name, img, description, price, idcategory }) => {
-                    if (idcategory == section.id) {
-                        let newProduct = product(id, name, img, description, price, idcategory);
-                        grid.appendChild(newProduct);
-                    }
-                })
-                gallery.appendChild(newSection);
-            }
-        })
+        if(textSearch.value===''){
+            sections.forEach((section) => {
+                let productsCategory = products.filter(product => product.idcategory === section.id)
+                if (productsCategory.length > 0) {
+                    let newSection = sectiond(section.name);
+                    const grid = newSection.querySelector('.section__products');
+                    productsCategory.forEach(({ id, name, img, description, price, idcategory }) => {
+                        if (idcategory == section.id) {
+                            let newProduct = product(id, name, img, description, price, idcategory);
+                            grid.appendChild(newProduct);
+                        }
+                    })
+                    gallery.appendChild(newSection);
+                }
+            })
+        }
     } catch (error) {
         console.error(error);
     }
-});
+};
+Load();
 /*   window.addEventListener('DOMContentLoaded', async () => {
     const sections = document.getElementById('gallery');
 

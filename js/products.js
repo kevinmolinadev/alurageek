@@ -1,4 +1,6 @@
 import { deleteProduct, dbProducts } from "./db/client-service.js";
+const form = document.querySelector('.header__search');
+const textSearch = document.querySelector('.header__search input');
 const product = (id, name, img, price) => {
     let product = document.createElement('article');
     let data = `
@@ -15,9 +17,8 @@ const product = (id, name, img, price) => {
     `
     product.innerHTML = data;
     let deleteP = product.querySelector('[data-delete]');
-    deleteP.addEventListener('click', async (event) => {
+    deleteP.addEventListener('click', async () => {
         try {
-            event.preventDefault();
             let id = deleteP.id;
             await deleteProduct(id);
         } catch (error) {
@@ -39,3 +40,9 @@ window.addEventListener('DOMContentLoaded', async () => {
         console.error('Error fetching products:', error);
     }
 });
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    localStorage.setItem('search',textSearch.value);
+    window.location.href = '../index.html';
+})
+

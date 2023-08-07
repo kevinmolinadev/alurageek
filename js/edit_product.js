@@ -1,11 +1,12 @@
 import { dbCategory, dbCategorys, dbProduct, updateProduct } from "./db/client-service.js";
 const url = window.location;
 const searchParams = new URLSearchParams(url.search);
+const formSearch = document.querySelector('.header__search');
+const textSearch = document.querySelector('.header__search input');
 const form = document.querySelector('[data-form]');
 const idValue = searchParams.get('id');
 const name = document.getElementById('name');
 const img = document.getElementById('img');
-const newcategory = document.getElementById('category');
 const categoryOptions = document.getElementById('options');
 const price = document.getElementById('price');
 const description = document.getElementById('description');
@@ -45,4 +46,9 @@ form.addEventListener('submit', async (event) => {
     } catch (error) {
         console.error(error);
     }
+})
+formSearch.addEventListener('submit', (e) => {
+    e.preventDefault();
+    localStorage.setItem('search',textSearch.value);
+    window.location.href = '../index.html';
 })

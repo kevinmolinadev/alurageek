@@ -1,4 +1,6 @@
 import { dbCategorys, newProduct, newCategory} from "./db/client-service.js";
+const formSearch = document.querySelector('.header__search');
+const textSearch = document.querySelector('.header__search input');
 const form = document.querySelector('[data-form]');
 const name = document.getElementById('name');
 const img = document.getElementById('img');
@@ -59,4 +61,9 @@ form.addEventListener('submit', async (event) => {
     } catch (error) {
         console.error(error);
     }
+})
+formSearch.addEventListener('submit', (e) => {
+    e.preventDefault();
+    localStorage.setItem('search',textSearch.value);
+    window.location.href = '../index.html';
 })

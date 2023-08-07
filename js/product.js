@@ -2,6 +2,8 @@ import { dbProducts, dbProduct } from './db/client-service.js';
 import { product } from './index.js';
 const url = window.location;
 const searchParams = new URLSearchParams(url.search);
+const form = document.querySelector('.header__search');
+const textSearch = document.querySelector('.header__search input');
 const idValue = searchParams.get('id');
 const img = document.querySelector('.item__img img')
 const title = document.querySelector('.item__title');
@@ -48,4 +50,9 @@ const addProduct = (id, name, img, description, price, idcategory) => {
 }
 productInformation(idValue);
 recomendedProducts(idValue);
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    localStorage.setItem('search',textSearch.value);
+    window.location.href = '../index.html';
+})
 

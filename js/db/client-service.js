@@ -38,6 +38,10 @@ export const newProduct=(name, img, description, price, idcategory)=>{
     });
 }
 
+export const searchProduct=async (name)=>{
+    const responsive = await fetch(`${products}?name=${encodeURIComponent(name)}`);
+    return await responsive.json();
+}
 export const newCategory= async(name)=>{
     const responsive = await fetch(categorys, {
         method: 'POST',

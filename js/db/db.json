@@ -1,190 +1,166 @@
 {
-  "category": [
-    {
-      "id": 1,
-      "name": "Star Wars"
-    },
-    {
-      "id": 2,
-      "name": "Consolas"
-    },
-    {
-      "id": 3,
-      "name": "Diversos"
-    },
-    {
-      "name": "Steam",
-      "id": 4
-    }
-  ],
-  "products": [
-    {
-      "name": "Taza Stormtrooper",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/taza.png",
-      "description": "Esta hermosa taza presenta un diseño detallado del casco de los Stormtroopers, soldados imperiales de la saga Star Wars. Fabricada en cerámica de alta calidad, es perfecta para disfrutar de tus bebidas favoritas mientras revives las emocionantes batallas de la galaxia lejana.",
-      "price": "56",
-      "idcategory": 1,
-      "id": 1
-    },
-    {
-      "name": "Figuras de Darth Vader",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/darth-vader.png",
-      "description": "Un impresionante set de figuras coleccionables que representan al icónico villano Darth Vader. Estas figuras detalladas son ideales para exhibir o como regalo para los fanáticos de Star Wars. Revive la épica saga de la lucha entre el bien y el mal con estas increíbles figuras.",
-      "price": "57",
-      "idcategory": 1,
-      "id": 2
-    },
-    {
-      "id": 3,
-      "name": "Muñeco Yoda",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/doll.png",
-      "description": "Un adorable muñeco de peluche inspirado en el famoso maestro Jedi Yoda de Star Wars. Este suave y tierno compañero de peluche es perfecto para los fans de todas las edades. Con sus grandes orejas puntiagudas y sabiduría legendaria, este muñeco Yoda traerá alegría a tu hogar y te recordará la fuerza y el poder del lado luminoso.",
-      "price": "35",
-      "idcategory": 1
-    },
-    {
-      "id": 4,
-      "name": "Traje Stormtrooper",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/traje.png",
-      "description": "Este impresionante traje de Stormtrooper te convertirá en uno de los soldados de élite del Imperio Galáctico. Confeccionado con materiales de alta calidad y detalles precisos, este traje es perfecto para fiestas temáticas de Star Wars, eventos de cosplay o para formar parte de un grupo de aficionados a la saga. Conviértete en el icónico símbolo de la opresión imperial y protege al Emperador a toda costa.",
-      "price": "120",
-      "idcategory": 1
-    },
-    {
-      "id": 5,
-      "name": "Yoda",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/yoda.png",
-      "description": "Una figura de colección de Yoda, uno de los personajes más queridos de Star Wars. Con su postura sabia y expresión serena, esta figura captura perfectamente la esencia del maestro Jedi. Hecha con materiales de alta calidad, es un imprescindible para cualquier coleccionista de Star Wars. Que la fuerza te acompañe.",
-      "price": "20",
-      "idcategory": 1
-    },
-    {
-      "id": 6,
-      "name": "Traje Palpatine",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/palpatine.png",
-      "description": "Este impresionante traje de Palpatine te permitirá encarnar al malvado Emperador Palpatine de Star Wars. Confeccionado con materiales de alta calidad y detalles precisos, este traje te convertirá en el siniestro manipulador detrás de la caída de la República y el ascenso del Imperio Galáctico. Perfecto para eventos de cosplay, fiestas temáticas de Star Wars y celebraciones de Halloween.",
-      "price": "150",
-      "idcategory": 1
-    },
-    {
-      "id": 7,
-      "name": "Mando Xbox",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/mando.png",
-      "description": "Este mando de Xbox te brinda una experiencia de juego inigualable. Con su diseño ergonómico y botones de respuesta rápida, este mando es ideal para jugadores de todas las edades. Compatible con Xbox Series X/S, Xbox One y PC, este mando te permitirá sumergirte en tus juegos favoritos y disfrutar de horas de diversión.",
-      "price": "50",
-      "idcategory": 2
-    },
-    {
-      "id": 8,
-      "name": "Play Station 5",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/ps5.png",
-      "description": "La consola PlayStation 5 es el último lanzamiento de Sony en la serie de consolas PlayStation. Con gráficos de última generación, tiempos de carga ultrarrápidos y un increíble catálogo de juegos, la PS5 ofrece una experiencia de juego incomparable. Descubre mundos asombrosos y sumérgete en aventuras épicas con esta potente consola de próxima generación.",
-      "price": "460",
-      "idcategory": 2
-    },
-    {
-      "id": 9,
-      "name": "Consola Nintendo NES",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/nes.png",
-      "description": "Revive la nostalgia de los videojuegos clásicos con la consola Nintendo Entertainment System (NES). Esta consola retro te permitirá disfrutar de los juegos icónicos de los años 80 y 90, como Super Mario Bros, The Legend of Zelda y Metroid. Conecta la NES a tu televisor y vuelve a experimentar la magia de los juegos de 8 bits con su icónico control rectangular.",
-      "price": "240",
-      "idcategory": 2
-    },
-    {
-      "id": 10,
-      "name": "Nintendo Switch",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/switch.png",
-      "description": "La Nintendo Switch es una consola híbrida que te permite jugar tanto en la comodidad de tu hogar como en movimiento. Con sus Joy-Cons desmontables, puedes jugar solo o con amigos en el modo multijugador local. Además de los juegos exclusivos de Nintendo, la Switch también cuenta con un amplio catálogo de títulos de terceros para que disfrutes de una gran variedad de experiencias de juego.",
-      "price": "420",
-      "idcategory": 2
-    },
-    {
-      "id": 11,
-      "name": "Xbox",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/xbox.png",
-      "description": "La consola Xbox ofrece una experiencia de juego de alta calidad con gráficos impresionantes y una amplia variedad de juegos exclusivos y populares. Con Xbox Game Pass, puedes acceder a una extensa biblioteca de juegos para descargar y jugar a través de una suscripción mensual. Sumérgete en mundos virtuales asombrosos y disfruta de horas de diversión con la consola Xbox.",
-      "price": "400",
-      "idcategory": 2
-    },
-    {
-      "id": 12,
-      "name": "Game Boy",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/game-boy.png",
-      "description": "El Game Boy es una consola portátil clásica que marcó una era en la historia de los videojuegos. Lanzado por Nintendo en los años 90, esta icónica consola en blanco y negro te permitirá disfrutar de juegos retro y adictivos como Tetris, Super Mario Land y Pokémon. Con su diseño compacto y batería de larga duración, el Game Boy es perfecto para llevarlo contigo y revivir momentos nostálgicos de tu infancia.",
-      "price": "999",
-      "idcategory": 2
-    },
-    {
-      "id": 13,
-      "name": "Camisa Atari",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/camisa-atari.png",
-      "description": "Esta camisa con el icónico logo de Atari es el regalo perfecto para los aficionados de los videojuegos clásicos. Confeccionada en algodón suave y cómodo, esta camisa te permitirá llevar contigo la nostalgia de la era dorada de los videojuegos. Haz una declaración de estilo y muestra tu pasión por los juegos retro con esta elegante camisa.",
-      "price": "36",
-      "idcategory": 3
-    },
-    {
-      "id": 14,
-      "name": "Camisa Snes",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/camisa-snes.png",
-      "description": "Celebra la legendaria consola Super Nintendo Entertainment System (SNES) con esta camisa retro. La SNES es famosa por su impresionante biblioteca de juegos y su impacto en la industria de los videojuegos. Lleva contigo la nostalgia de los clásicos como Super Mario World, The Legend of Zelda: A Link to the Past y muchos más con esta camisa de estilo vintage.",
-      "price": "57",
-      "idcategory": 3
-    },
-    {
-      "id": 15,
-      "name": "Muñeco Sonic",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/sonic.png",
-      "description": "Este muñeco de Sonic, el famoso erizo azul de SEGA, es una adición imprescindible para cualquier fanático de los videojuegos. Con su actitud audaz y su icónico diseño, Sonic ha sido un personaje querido por generaciones. Este muñeco captura perfectamente la esencia del héroe veloz y te recordará las emocionantes aventuras en Green Hill Zone y más allá.",
-      "price": "15",
-      "idcategory": 3
-    },
-    {
-      "id": 16,
-      "name": "Reloj Digital",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/relog.png",
-      "description": "Este reloj digital es el accesorio perfecto para los fanáticos de los videojuegos retro. Con su diseño inspirado en los gráficos pixelados de los juegos clásicos, este reloj te permitirá llevar contigo la nostalgia de los viejos tiempos. Además de mostrar la hora, el reloj también incluye funciones como cronómetro y alarma, siendo un compañero útil y elegante para el día a día.",
-      "price": "24",
-      "idcategory": 3
-    },
-    {
-      "id": 17,
-      "name": "Gafas Virtuales",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/gafas.png",
-      "description": "Sumérgete en la realidad virtual con estas impresionantes gafas. Con su diseño ergonómico y tecnología avanzada, estas gafas te permitirán vivir experiencias de juego y entretenimiento inmersivas como nunca antes. Explora mundos virtuales, participa en emocionantes juegos y disfruta de películas en 3D con estas gafas de realidad virtual de alta calidad.",
-      "price": "820",
-      "idcategory": 3
-    },
-    {
-      "name": "Pikachu",
-      "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/pikachu.png",
-      "description": "Este adorable peluche de Pikachu, el famoso Pokémon eléctrico, es un compañero ideal para los amantes de Pokémon. Con sus mejillas sonrojadas y su carácter encantador, este peluche captura la esencia del querido personaje. Lleva contigo la magia del mundo Pokémon y deja que Pikachu ilumine tu día con su energía y encanto.",
-      "price": "24",
-      "idcategory": 3,
-      "id": 18
-    },
-    {
-      "name": "Sekirito Goty de toda la vida",
-      "img": "https://cdn.akamai.steamstatic.com/steam/apps/814380/capsule_616x353.jpg?t=1678991267",
-      "description": "Este juegot es goty",
-      "price": "100",
-      "idcategory": 4,
-      "id": 19
-    },
-    {
-      "name": "hollow knight",
-      "img": "https://images.squarespace-cdn.com/content/v1/606d159a953867291018f801/1619987722169-VV6ZASHHZNRBJW9X0PLK/Key_Art_02_layeredjpg.jpg?format=1500w",
-      "description": "Tremendo juego el del cascaron vacio, una obra maestra 20/10 y goty",
-      "price": "24",
-      "idcategory": 4,
-      "id": 20
-    },
-    {
-      "name": "Dark Shouls",
-      "img": "https://image.api.playstation.com/cdn/EP0700/CUSA08495_00/COYF3JBI46ftkG7tIdTjQg0v9aZ2378N.png",
-      "description": "Este jeugo de Dark Shouls Remastered es una carta de amor a los videojuegos, Tremendo juego 🗿🗿",
-      "price": "59",
-      "idcategory": 4,
-      "id": 21
-    }
-  ]
-}
+    "category": [
+      {
+        "id": 1,
+        "name": "Star Wars"
+      },
+      {
+        "id": 2,
+        "name": "Consolas"
+      },
+      {
+        "id": 3,
+        "name": "Diversos"
+      },
+      {
+        "name": "Steam",
+        "id": 4
+      }
+    ],
+    "products": [
+      {
+        "name": "Taza Stormtrooper",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/taza.png",
+        "description": "Esta hermosa taza presenta un diseño detallado del casco de los Stormtroopers, soldados imperiales de la saga Star Wars. Fabricada en cerámica de alta calidad, es perfecta para disfrutar de tus bebidas favoritas mientras revives las emocionantes batallas de la galaxia lejana.",
+        "price": "56",
+        "idcategory": 1,
+        "id": 1
+      },
+      {
+        "name": "Figuras de Darth Vader",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/darth-vader.png",
+        "description": "Un impresionante set de figuras coleccionables que representan al icónico villano Darth Vader. Estas figuras detalladas son ideales para exhibir o como regalo para los fanáticos de Star Wars. Revive la épica saga de la lucha entre el bien y el mal con estas increíbles figuras.",
+        "price": "57",
+        "idcategory": 1,
+        "id": 2
+      },
+      {
+        "id": 3,
+        "name": "Muñeco Yoda",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/doll.png",
+        "description": "Un adorable muñeco de peluche inspirado en el famoso maestro Jedi Yoda de Star Wars. Este suave y tierno compañero de peluche es perfecto para los fans de todas las edades. Con sus grandes orejas puntiagudas y sabiduría legendaria, este muñeco Yoda traerá alegría a tu hogar y te recordará la fuerza y el poder del lado luminoso.",
+        "price": "35",
+        "idcategory": 1
+      },
+      {
+        "id": 4,
+        "name": "Traje Stormtrooper",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/traje.png",
+        "description": "Este impresionante traje de Stormtrooper te convertirá en uno de los soldados de élite del Imperio Galáctico. Confeccionado con materiales de alta calidad y detalles precisos, este traje es perfecto para fiestas temáticas de Star Wars, eventos de cosplay o para formar parte de un grupo de aficionados a la saga. Conviértete en el icónico símbolo de la opresión imperial y protege al Emperador a toda costa.",
+        "price": "120",
+        "idcategory": 1
+      },
+      {
+        "id": 5,
+        "name": "Yoda",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/yoda.png",
+        "description": "Una figura de colección de Yoda, uno de los personajes más queridos de Star Wars. Con su postura sabia y expresión serena, esta figura captura perfectamente la esencia del maestro Jedi. Hecha con materiales de alta calidad, es un imprescindible para cualquier coleccionista de Star Wars. Que la fuerza te acompañe.",
+        "price": "20",
+        "idcategory": 1
+      },
+      {
+        "id": 6,
+        "name": "Traje Palpatine",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/star-wars/palpatine.png",
+        "description": "Este impresionante traje de Palpatine te permitirá encarnar al malvado Emperador Palpatine de Star Wars. Confeccionado con materiales de alta calidad y detalles precisos, este traje te convertirá en el siniestro manipulador detrás de la caída de la República y el ascenso del Imperio Galáctico. Perfecto para eventos de cosplay, fiestas temáticas de Star Wars y celebraciones de Halloween.",
+        "price": "150",
+        "idcategory": 1
+      },
+      {
+        "id": 7,
+        "name": "Mando Xbox",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/mando.png",
+        "description": "Este mando de Xbox te brinda una experiencia de juego inigualable. Con su diseño ergonómico y botones de respuesta rápida, este mando es ideal para jugadores de todas las edades. Compatible con Xbox Series X/S, Xbox One y PC, este mando te permitirá sumergirte en tus juegos favoritos y disfrutar de horas de diversión.",
+        "price": "50",
+        "idcategory": 2
+      },
+      {
+        "id": 8,
+        "name": "Play Station 5",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/ps5.png",
+        "description": "La consola PlayStation 5 es el último lanzamiento de Sony en la serie de consolas PlayStation. Con gráficos de última generación, tiempos de carga ultrarrápidos y un increíble catálogo de juegos, la PS5 ofrece una experiencia de juego incomparable. Descubre mundos asombrosos y sumérgete en aventuras épicas con esta potente consola de próxima generación.",
+        "price": "460",
+        "idcategory": 2
+      },
+      {
+        "id": 9,
+        "name": "Consola Nintendo NES",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/nes.png",
+        "description": "Revive la nostalgia de los videojuegos clásicos con la consola Nintendo Entertainment System (NES). Esta consola retro te permitirá disfrutar de los juegos icónicos de los años 80 y 90, como Super Mario Bros, The Legend of Zelda y Metroid. Conecta la NES a tu televisor y vuelve a experimentar la magia de los juegos de 8 bits con su icónico control rectangular.",
+        "price": "240",
+        "idcategory": 2
+      },
+      {
+        "id": 10,
+        "name": "Nintendo Switch",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/switch.png",
+        "description": "La Nintendo Switch es una consola híbrida que te permite jugar tanto en la comodidad de tu hogar como en movimiento. Con sus Joy-Cons desmontables, puedes jugar solo o con amigos en el modo multijugador local. Además de los juegos exclusivos de Nintendo, la Switch también cuenta con un amplio catálogo de títulos de terceros para que disfrutes de una gran variedad de experiencias de juego.",
+        "price": "420",
+        "idcategory": 2
+      },
+      {
+        "id": 11,
+        "name": "Xbox",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/xbox.png",
+        "description": "La consola Xbox ofrece una experiencia de juego de alta calidad con gráficos impresionantes y una amplia variedad de juegos exclusivos y populares. Con Xbox Game Pass, puedes acceder a una extensa biblioteca de juegos para descargar y jugar a través de una suscripción mensual. Sumérgete en mundos virtuales asombrosos y disfruta de horas de diversión con la consola Xbox.",
+        "price": "400",
+        "idcategory": 2
+      },
+      {
+        "id": 12,
+        "name": "Game Boy",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/consolas/game-boy.png",
+        "description": "El Game Boy es una consola portátil clásica que marcó una era en la historia de los videojuegos. Lanzado por Nintendo en los años 90, esta icónica consola en blanco y negro te permitirá disfrutar de juegos retro y adictivos como Tetris, Super Mario Land y Pokémon. Con su diseño compacto y batería de larga duración, el Game Boy es perfecto para llevarlo contigo y revivir momentos nostálgicos de tu infancia.",
+        "price": "999",
+        "idcategory": 2
+      },
+      {
+        "id": 13,
+        "name": "Camisa Atari",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/camisa-atari.png",
+        "description": "Esta camisa con el icónico logo de Atari es el regalo perfecto para los aficionados de los videojuegos clásicos. Confeccionada en algodón suave y cómodo, esta camisa te permitirá llevar contigo la nostalgia de la era dorada de los videojuegos. Haz una declaración de estilo y muestra tu pasión por los juegos retro con esta elegante camisa.",
+        "price": "36",
+        "idcategory": 3
+      },
+      {
+        "id": 14,
+        "name": "Camisa Snes",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/camisa-snes.png",
+        "description": "Celebra la legendaria consola Super Nintendo Entertainment System (SNES) con esta camisa retro. La SNES es famosa por su impresionante biblioteca de juegos y su impacto en la industria de los videojuegos. Lleva contigo la nostalgia de los clásicos como Super Mario World, The Legend of Zelda: A Link to the Past y muchos más con esta camisa de estilo vintage.",
+        "price": "57",
+        "idcategory": 3
+      },
+      {
+        "id": 15,
+        "name": "Muñeco Sonic",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/sonic.png",
+        "description": "Este muñeco de Sonic, el famoso erizo azul de SEGA, es una adición imprescindible para cualquier fanático de los videojuegos. Con su actitud audaz y su icónico diseño, Sonic ha sido un personaje querido por generaciones. Este muñeco captura perfectamente la esencia del héroe veloz y te recordará las emocionantes aventuras en Green Hill Zone y más allá.",
+        "price": "15",
+        "idcategory": 3
+      },
+      {
+        "id": 16,
+        "name": "Reloj Digital",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/relog.png",
+        "description": "Este reloj digital es el accesorio perfecto para los fanáticos de los videojuegos retro. Con su diseño inspirado en los gráficos pixelados de los juegos clásicos, este reloj te permitirá llevar contigo la nostalgia de los viejos tiempos. Además de mostrar la hora, el reloj también incluye funciones como cronómetro y alarma, siendo un compañero útil y elegante para el día a día.",
+        "price": "24",
+        "idcategory": 3
+      },
+      {
+        "id": 17,
+        "name": "Gafas Virtuales",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/gafas.png",
+        "description": "Sumérgete en la realidad virtual con estas impresionantes gafas. Con su diseño ergonómico y tecnología avanzada, estas gafas te permitirán vivir experiencias de juego y entretenimiento inmersivas como nunca antes. Explora mundos virtuales, participa en emocionantes juegos y disfruta de películas en 3D con estas gafas de realidad virtual de alta calidad.",
+        "price": "820",
+        "idcategory": 3
+      },
+      {
+        "name": "Pikachu",
+        "img": "https://raw.githubusercontent.com/molinalk/AluraGeek/main/img/diversos/pikachu.png",
+        "description": "Este adorable peluche de Pikachu, el famoso Pokémon eléctrico, es un compañero ideal para los amantes de Pokémon. Con sus mejillas sonrojadas y su carácter encantador, este peluche captura la esencia del querido personaje. Lleva contigo la magia del mundo Pokémon y deja que Pikachu ilumine tu día con su energía y encanto.",
+        "price": "24",
+        "idcategory": 3,
+        "id": 18
+      }
+    ]
+  }
