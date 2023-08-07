@@ -22,15 +22,20 @@ const product = (id, name, img, price) => {
         try {
             let id = deleteP.id;
             await deleteProduct(id);
+            product.style.opacity = 0
+            product.style.transition = 'opacity 1s';
         } catch (error) {
             console.error(error);
         }
+        setTimeout(()=>{
+            product.style.display = 'none'
+        },900)
     })
     product.classList.add('product');
     return product;
 }
 
-window.addEventListener('DOMContentLoaded', async () => {
+const Load= async () => {
     const contenedor = document.querySelector('.section__products');
     try {
         const data = await dbProducts();
@@ -41,11 +46,12 @@ window.addEventListener('DOMContentLoaded', async () => {
     } catch (error) {
         console.error('Error fetching products:', error);
     }
-});
+};
+Load();
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    localStorage.setItem('search',textSearch.value);
+    localStorage.setItem('search', textSearch.value);
     window.location.href = '../index.html';
 })
 
