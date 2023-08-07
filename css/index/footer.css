@@ -1,7 +1,11 @@
 .footer{
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding:1rem 2rem;
 }
 .footer__text{
     font-weight: 500;
+    margin: 0;
 }
